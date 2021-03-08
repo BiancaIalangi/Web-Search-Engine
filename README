@@ -1,0 +1,47 @@
+IALANGI BIANCA-ELENA
+311CA
+..................................................
+
+=Iterative= 
+
+- se deschide nume.in si se extrage n de tip string, pentru a ma putea folosi de el folosesc functia str2double ce face cast la double variabilei n
+
+- se extrage matrice X formata din (n + 2) linii si se creaza matricea A de adiacenta
+
+- se creaza vectorul coloana L ce arata catre cate pagini merge mai departe pagina curenta
+
+- diag(L) transforma L in matrice diagonala
+
+- cu ajutorul parametrilor descrisi mai sus se calculeaza R (vectorul de PageRank) asemenea algoritmului aratat pe Wikipedia
+
+=PR_Inv=
+
+-functie luata din laborator
+
+=Algebraic=
+
+- se calculeaza parametrii necesari asemenea functiei Iterative si se calculeaza R (vectorul de PageRank) asemenea algoritmului aratat pe Wikipedia
+
+- pentru a economisi timp si spatiu se calculeaza inversa matricei (I(numar pagini web) - d*M) cu Gram-Schmidt 
+
+=Apartenenta=
+
+-pentru ca functia sa fie continua
+ 
+a*val1 + b = 0
+a*val2 + b = 1
+
+, astfel  b = -a*val1 si a = 1/(val2-val1)
+
+=PageRank=
+
+- se extrag val1 si val2 din matricea X
+
+- se creaza nume.out cu ajutorul functiei strcat
+
+- se afiseaza rezultatele de tip float in nume.out
+
+- se extrag elementele din R1 si se afiseaza in R2 in ordine descresctoare cu ajutorul functiei SORT
+
+- se inlocuieste coloana 3 a matrice R2 cu noile valorile care se calculeaza cu ajutorul functiei Apartenenta
+
